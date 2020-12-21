@@ -1,4 +1,18 @@
+This is a Linkedin "like" app -in progress- built with : <br/>
+
+- [x] REACTJS <br/>
+- [x] REDUX (Data management within React) <br/>
+- [x] FIREBASE FIRESTORE (realtime database) <br/>
+- [x] FIREBASE AUTHENTICATION (Login) <br/>
+- [x] FIREBASE HOSTING <br/>
+- [x] MATERIAL UI (Design) <br/>
+
+<hr/>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+
 
 ## Available Scripts
 
