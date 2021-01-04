@@ -1,5 +1,8 @@
-import React from 'react'
-import './Header.css'
+import React from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import {logout, selectUser} from './features/userSlice';
+import {auth} from './firebase';
+import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import HeaderOption from './HeaderOption';
 import HomeIcon from '@material-ui/icons/Home';
@@ -8,7 +11,14 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 
+
 function Header() {
+const user = useSelector(selectUser);
+    const dispatch = useDispatch();
+    const logoutOfApp = () => {
+     dispatch(logout())
+     auth.signOut();
+    }
     return (
         <div className="header">
             <div className="header__left">
@@ -27,7 +37,7 @@ function Header() {
                 <HeaderOption Icon={BusinessCenterIcon} title='Jobs'/>
                 <HeaderOption Icon={ChatIcon} title='Messaging'/>
                 <HeaderOption Icon={NotificationsIcon} title='Notifications'/>
-                <HeaderOption avatar='https://www.consejosparamihuerto.com/wp-content/uploads/2020/02/tulipanes.jpg' title="me"/>
+                <HeaderOption avatar={true} title="me" onClick={logoutOfApp}/>
             </div>
         </div>
     )
