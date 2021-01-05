@@ -3,7 +3,7 @@ This is a Linkedin "like" app -in progress- built with : <br/>
 - [x] REACTJS <br/>
 - [x] REDUX (Data management within React) <br/>
 - [x] FIREBASE FIRESTORE (realtime database) <br/>
-- [x] FIREBASE AUTHENTICATION (Login) <br/>
+- [x] FIREBASE AUTHENTICATION  (Login - Logout) <br/>
 - [x] FIREBASE HOSTING <br/>
 - [x] MATERIAL UI (Design) <br/>
 
