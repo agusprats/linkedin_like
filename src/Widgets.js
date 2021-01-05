@@ -18,17 +18,17 @@ function Widgets() {
     return (
         <div className="widgets">
             <div className="widgets__header">
-                <h2>LinkedIn News</h2>
+                <h2>Latest News</h2>
                 <InfoIcon/>
             </div>
-            {newsArticle("Welcome from Bs As", "Top news - 3444 readers")}
+            {newsArticle("Welcome 2021", "Top news - 3444 readers")}
             {newsArticle("React and Redux, master it in 2021", "Top news - 6784 readers")}
-            {newsArticle("MERN Stack, best on-line courses", "Top news - 5544 readers")}
+            {newsArticle("MERN Stack, best on-line courses", "Top news - 9544 readers")}
             {newsArticle("Fullstack, what does it really mean?", "Top news - 2311 readers")}
-            {newsArticle("Welcome from Bs As", "Top news - 3444 readers")}
-            {newsArticle("React and Redux, master it in 2021", "Top news - 6784 readers")}
-            {newsArticle("MERN Stack, best on-line courses", "Top news - 5544 readers")}
-            {newsArticle("Fullstack, what does it really mean?", "Top news - 2311 readers")}
+            {newsArticle("IT industry in Argentina", "Top news - 3444 readers")}
+            {newsArticle("React vs Angular", "Top news - 6784 readers")}
+            {newsArticle("Junior Dev opportunities", "Top news - 7534 readers")}
+            {newsArticle("Zero to Full Stack Hero", "Top news - 3119 readers")}
         </div>
         
     )

@@ -52,9 +52,9 @@ function Login() {
         <div className="login">
             <img
             src="https://news.hitb.org/sites/default/files/styles/large/public/field/image/500px-LinkedIn_Logo.svg__1.png"
-            alt="linkedin"
-            
+            alt="linked-in"
             />
+
             <form>
                 <input 
                 value={name}
@@ -88,10 +88,10 @@ function Login() {
 
             </form>
             <p>Not a member?
-            <span className="login__register" onClick={register}>Register Now</span>
+            <span className="login__register" onClick={register}> Register Now</span>
             </p>
             <p>DISCLAIMER</p>
-            <p>This web was built only for educational purposes</p>
+            <p>This web app is for educational purposes only</p>
         </div>
     )
 }

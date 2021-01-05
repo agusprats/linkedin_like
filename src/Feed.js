@@ -17,6 +17,8 @@ function Feed() {
     const user = useSelector(selectUser);
     const[input, setInput] = useState('');
     const[posts, setPosts] = useState([]);
+    const [imageUrl, setImageUrl] = useState('');
+    
 
     useEffect(() => {
         db.collection('posts')
@@ -38,9 +40,11 @@ function Feed() {
             description: user.email,
             message: input,
             photoUrl: user.photoUrl || "",
+            image: imageUrl,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
         setInput('');
+        setImageUrl('');
     };
     return (
         <div className="feed">
@@ -48,7 +52,14 @@ function Feed() {
                 <div className="feed__input">
                     <CreateIcon/>
                     <form>
-                        <input value={input} onChange={e => setInput(e.target.value)} type='text' />
+                        <input 
+                        value={input} 
+                        onChange={e => setInput(e.target.value)} 
+                        type='text' />
+                        <input 
+                        value={imageUrl}
+                        onChange={ (e) => setImageUrl(e.target.value) }
+                        placeholder='image URL (Optional)'/>
                         <button onClick={sendPost} type='submit'>Send</button>
                     </form>
                 </div>
@@ -66,13 +77,15 @@ function Feed() {
             </div>
             <FlipMove>
             {/* Posts */}
-            {posts.map(({ id, data: { name, description, message, photoUrl }}) => (
+            {posts.map(({ id, data: { name, description, message, photoUrl, image, timestamp }}) => (
                 <Post
                 key={id}
                 name={name}
                 description={description}
                 message={message}
                 photoUrl={photoUrl}
+                image={image}
+                timestamp={timestamp}
                 />
             ))}
             </FlipMove>

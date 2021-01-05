@@ -32,12 +32,12 @@ flex-direction: column;
     height: 50px;
     font-size: large;
     color: #fff;
-    background-color: #0074b1;
+    background-color: #0a66c2;
     border-radius: 5px;
 }
 
 .login__register {
-    color:#0177b7;
+    color:#0a66c2;
     cursor:pointer;
 }
 

@@ -8,14 +8,21 @@
 .post__header{
     display: flex;
     margin-bottom: 10px;
+    background-color: #0a66c2;
+    border-radius: 20px;
+    padding: 5px;
 }
-.post-info{
+.post__info{
     margin-left: 12px;
-    color:gray;
+    color:white;
+    background-color:#0a66c2;
 }
 
 .post__body{
 overflow-wrap: anywhere;
+}
+.post__image > img {
+    width: 100%;
 }
 
 .post__info > h2{
