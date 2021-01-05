@@ -23,7 +23,7 @@ const user = useSelector(selectUser);
         <div className="header">
             <div className="header__left">
                 <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" 
-                alt="logo"
+                alt="logo linkedin"
                 />
 
                 <div className="header__search">
